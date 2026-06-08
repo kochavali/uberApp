@@ -42,7 +42,12 @@ public class WalletServiceImpl implements WalletService {
         return walletRepository.save(wallet);
     }
 
-    @Override
+  @Override
+  public Wallet addMoneyToWallet(User user, Double amount) {
+    return null;
+  }
+
+  @Override
     public Wallet deductMoneyFromWallet(User user, Double amount) {
         Wallet wallet = findByUser(user);
 
